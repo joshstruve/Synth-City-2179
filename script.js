@@ -143,14 +143,14 @@ function onMouseMove(event) {
 }
 
 function onDocumentTouchStart( event ) {
-  if ( event.touches.length == 1 ) {
+  if ( event.touches.length == 10 ) {
     event.preventDefault();
     mouse.x = event.touches[ 0 ].pageX -  window.innerWidth / 2;
     mouse.y = event.touches[ 0 ].pageY - window.innerHeight / 2;
   }
 }
 function onDocumentTouchMove( event ) {
-  if ( event.touches.length == 1 ) {
+  if ( event.touches.length == 10 ) {
     event.preventDefault();
     mouse.x = event.touches[ 0 ].pageX -  window.innerWidth / 2;
     mouse.y = event.touches[ 0 ].pageY - window.innerHeight / 2;
